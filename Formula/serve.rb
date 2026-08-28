@@ -11,7 +11,7 @@ class Serve < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_darwin_amd64.tar.gz"
-      sha256 "60054a0d8192ddf1e64c5158bf643b98c86dcd4291281773754583f38b9eade4"
+      sha256 "2f56405b9c286c9b1699f2548ff19159dba8e4e3dc1dc1074116b27b025049bd"
 
       define_method(:install) do
         bin.install "serve"
@@ -19,7 +19,7 @@ class Serve < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_darwin_arm64.tar.gz"
-      sha256 "4d0804001ad743200bd48236dec680075f01aba42647a9f66a227d22f1d15ecc"
+      sha256 "c6e539e38c5996e21b290dc760db6d1eb8bc03c38543d73c4b0d055da5dafae2"
 
       define_method(:install) do
         bin.install "serve"
@@ -30,14 +30,14 @@ class Serve < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_linux_amd64.tar.gz"
-      sha256 "d158f452d1bb366589133951aa4d2eded79ec32c106f2f7036a1b1b9057f82ae"
+      sha256 "1a67e9c49d4d7e5d74f31aa749efcfd85c5e817a0d4571e0ddd355194629fb62"
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_linux_arm64.tar.gz"
-      sha256 "354a2e27c92f384e62620dbe28fb865a089ca510084b9cf091c5080b020d99f2"
+      sha256 "546b747554eca529b87fc6dbd50004491e7c712194beea0dd28f8f9e3788ca1e"
       define_method(:install) do
         bin.install "serve"
       end
