@@ -5,21 +5,21 @@
 class Serve < Formula
   desc "Public tunnel for hosted serve accounts"
   homepage "https://github.com/swyftlabs/serve"
-  version "0.8.0"
+  version "0.8.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_darwin_amd64.tar.gz"
-      sha256 "2f56405b9c286c9b1699f2548ff19159dba8e4e3dc1dc1074116b27b025049bd"
+      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.1/serve_0.8.1_darwin_amd64.tar.gz"
+      sha256 "a485653b0f8913875d0e431180ee8cbdfd013facd009d5d4f128d055e551da02"
 
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_darwin_arm64.tar.gz"
-      sha256 "c6e539e38c5996e21b290dc760db6d1eb8bc03c38543d73c4b0d055da5dafae2"
+      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.1/serve_0.8.1_darwin_arm64.tar.gz"
+      sha256 "0e70615095bbfab70799106502a3169c150a064029723c62fe19c5e77da9e014"
 
       define_method(:install) do
         bin.install "serve"
@@ -29,15 +29,15 @@ class Serve < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_linux_amd64.tar.gz"
-      sha256 "1a67e9c49d4d7e5d74f31aa749efcfd85c5e817a0d4571e0ddd355194629fb62"
+      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.1/serve_0.8.1_linux_amd64.tar.gz"
+      sha256 "cd7d066c18ccc3c143c8579f893a48fb4418d179bc78fb63e22a18f9e6769fbf"
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.0/serve_0.8.0_linux_arm64.tar.gz"
-      sha256 "546b747554eca529b87fc6dbd50004491e7c712194beea0dd28f8f9e3788ca1e"
+      url "https://github.com/servelink-swyftlabs/serve-dist/releases/download/v0.8.1/serve_0.8.1_linux_arm64.tar.gz"
+      sha256 "1482d8f5ac0c95edf04accc48bf54874f32e473cb8e4ee412ad4ea5324623d92"
       define_method(:install) do
         bin.install "serve"
       end
